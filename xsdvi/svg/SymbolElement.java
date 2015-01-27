@@ -146,11 +146,12 @@ public class SymbolElement extends AbstractSymbol{
 	@Override
 	public void draw() {
 		drawGStart();
+		height -= 10;
 		print("<rect class='shadow' x='3' y='3' width='"+width+"' height='"+height+"'/>");
 		print("<rect class='boxelement' x='0' y='0' width='"+width+"' height='"+height+"'");
 		drawMouseover();
 		if (namespace!=null) {
-			print("<text class='visible' x='5' y='13'>"+namespace+"</text>");
+			print("<text class='visible' x='5' y='0'>"+namespace+"</text>");
 		}
 		if (substitution!=null) {
 			//print("<text class='hidden' visibility='hidden' x='5' y='13'>subst.: "+substitution+"</text>");
@@ -161,13 +162,13 @@ public class SymbolElement extends AbstractSymbol{
 			//print("<text class='hidden' visibility='hidden' x='5' y='41'>abstract: "+(abstr ? "1" : "0")+"</text>");
 		}
 		if (name!=null) {
-			print("<text class='strong' x='5' y='27'>"+name+"</text>");
+			print("<text class='strong' x='5' y='14'>"+name+"</text>");
 		}
 		if (type!=null) {
-			print("<text x='5' y='41'>"+type+"</text>");
+			print("<text x='5' y='28'>"+type+"</text>");
 		}
 		if (cardinality!=null) {
-			print("<text x='5' y='59'>"+cardinality+"</text>");
+			print("<text x='5' y='46'>"+cardinality+"</text>");
 		}
 		drawConnection();
 		drawUse();
@@ -179,11 +180,12 @@ public class SymbolElement extends AbstractSymbol{
 	 */
 	void drawAlternate() {
 		drawGStart();
+		height *= 3/4;
 		print("<rect class='shadow' x='3' y='3' width='"+width+"' height='"+height+"'/>");
 		print("<rect class='boxelement' x='0' y='0' width='"+width+"' height='"+height+"'");
 		drawMouseover();
 		if (namespace!=null) {
-			print("<text class='hidden' visibility='hidden' x='5' y='13'>"+namespace+"</text>");
+			print("<text class='hidden' visibility='hidden' x='5' y='0'>"+namespace+"</text>");
 		}
 		if (substitution!=null) {
 			//print("<text class='visible' x='5' y='13'>subst.: "+substitution+"</text>");
@@ -194,13 +196,13 @@ public class SymbolElement extends AbstractSymbol{
 			//print("<text class='visible' x='5' y='41'>abstract: "+(abstr ? "1" : "0")+"</text>");
 		}
 		if (name!=null) {
-			print("<text class='strong' x='5' y='27'>"+name+"</text>");
+			print("<text class='strong' x='5' y='14'>"+name+"</text>");
 		}
 		if (type!=null) {
-			print("<text x='5' y='41'>"+type+"</text>");
+			print("<text x='5' y='08'>"+type+"</text>");
 		}
 		if (cardinality!=null) {
-			print("<text x='5' y='59'>"+cardinality+"</text>");
+			print("<text x='5' y='46'>"+cardinality+"</text>");
 		}
 		drawConnection();
 		drawUse();
