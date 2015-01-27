@@ -3,7 +3,7 @@ package xsdvi.svg;
 import xsdvi.utils.WidthCalculator;
 
 /**
- * @author Václav Slavìtínský
+ * @author VÃ¡clav SlavÄ›tÃ­nskÃ½
  *
  */
 public class SymbolAny extends AbstractSymbol{

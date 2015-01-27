@@ -3,7 +3,7 @@ package xsdvi.svg;
 import xsdvi.utils.TreeElement;
 
 /**
- * @author Václav Slavìtínskı
+ * @author VÃ¡clav SlavÄ›tÃ­nskÃ½
  *
  */
 public abstract class AbstractSymbol extends TreeElement {

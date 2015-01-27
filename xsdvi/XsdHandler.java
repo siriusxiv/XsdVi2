@@ -7,7 +7,7 @@ import xsdvi.svg.*;
 import xsdvi.utils.TreeBuilder;
 
 /**
- * @author Václav Slavìtínskı
+ * @author VÃ¡clav SlavÄ›tÃ­nskÃ½
  *
  */
 public class XsdHandler {

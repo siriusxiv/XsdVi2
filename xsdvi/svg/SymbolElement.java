@@ -3,7 +3,7 @@ package xsdvi.svg;
 import xsdvi.utils.WidthCalculator;
 
 /**
- * @author Václav Slavìtínský
+ * @author VÃ¡clav SlavÄ›tÃ­nskÃ½
  *
  */
 public class SymbolElement extends AbstractSymbol{	
@@ -153,18 +153,18 @@ public class SymbolElement extends AbstractSymbol{
 			print("<text class='visible' x='5' y='13'>"+namespace+"</text>");
 		}
 		if (substitution!=null) {
-			print("<text class='hidden' visibility='hidden' x='5' y='13'>subst.: "+substitution+"</text>");
-			print("<text class='hidden' visibility='hidden' x='5' y='41'>nillable: "+(nillable ? "1" : "0")+", abstract: "+(abstr ? "1" : "0")+"</text>");
+			//print("<text class='hidden' visibility='hidden' x='5' y='13'>subst.: "+substitution+"</text>");
+			//print("<text class='hidden' visibility='hidden' x='5' y='41'>nillable: "+(nillable ? "1" : "0")+", abstract: "+(abstr ? "1" : "0")+"</text>");
 		}
 		else {
-			print("<text class='hidden' visibility='hidden' x='5' y='13'>nillable: "+(nillable ? "1" : "0")+"</text>");
-			print("<text class='hidden' visibility='hidden' x='5' y='41'>abstract: "+(abstr ? "1" : "0")+"</text>");
+			//print("<text class='hidden' visibility='hidden' x='5' y='13'>nillable: "+(nillable ? "1" : "0")+"</text>");
+			//print("<text class='hidden' visibility='hidden' x='5' y='41'>abstract: "+(abstr ? "1" : "0")+"</text>");
 		}
 		if (name!=null) {
 			print("<text class='strong' x='5' y='27'>"+name+"</text>");
 		}
 		if (type!=null) {
-			print("<text class='visible' x='5' y='41'>"+type+"</text>");
+			print("<text x='5' y='41'>"+type+"</text>");
 		}
 		if (cardinality!=null) {
 			print("<text x='5' y='59'>"+cardinality+"</text>");
@@ -186,18 +186,18 @@ public class SymbolElement extends AbstractSymbol{
 			print("<text class='hidden' visibility='hidden' x='5' y='13'>"+namespace+"</text>");
 		}
 		if (substitution!=null) {
-			print("<text class='visible' x='5' y='13'>subst.: "+substitution+"</text>");
-			print("<text class='visible' x='5' y='41'>nillable: "+(nillable ? "1" : "0")+", abstract: "+(abstr ? "1" : "0")+"</text>");
+			//print("<text class='visible' x='5' y='13'>subst.: "+substitution+"</text>");
+			//print("<text class='visible' x='5' y='41'>nillable: "+(nillable ? "1" : "0")+", abstract: "+(abstr ? "1" : "0")+"</text>");
 		}
 		else {
-			print("<text class='visible' x='5' y='13'>nillable: "+(nillable ? "1" : "0")+"</text>");
-			print("<text class='visible' x='5' y='41'>abstract: "+(abstr ? "1" : "0")+"</text>");
+			//print("<text class='visible' x='5' y='13'>nillable: "+(nillable ? "1" : "0")+"</text>");
+			//print("<text class='visible' x='5' y='41'>abstract: "+(abstr ? "1" : "0")+"</text>");
 		}
 		if (name!=null) {
 			print("<text class='strong' x='5' y='27'>"+name+"</text>");
 		}
 		if (type!=null) {
-			print("<text class='hidden' visibility='hidden' x='5' y='41'>"+type+"</text>");
+			print("<text x='5' y='41'>"+type+"</text>");
 		}
 		if (cardinality!=null) {
 			print("<text x='5' y='59'>"+cardinality+"</text>");

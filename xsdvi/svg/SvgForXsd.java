@@ -4,7 +4,7 @@ import xsdvi.utils.TreeElement;
 import xsdvi.utils.WriterHelper;
 
 /**
- * @author Václav Slavìtínský
+ * @author VÃ¡clav SlavÄ›tÃ­nskÃ½
  *
  */
 public class SvgForXsd {

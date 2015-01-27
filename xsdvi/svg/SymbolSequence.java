@@ -3,7 +3,7 @@ package xsdvi.svg;
 import xsdvi.utils.WidthCalculator;
 
 /**
- * @author Václav Slavìtínský
+ * @author VÃ¡clav SlavÄ›tÃ­nskÃ½
  *
  */
 public class SymbolSequence extends AbstractSymbol {
@@ -44,6 +44,7 @@ public class SymbolSequence extends AbstractSymbol {
 	@Override
 	public void draw() {
 		drawGStart();
+		/*
 		print("<rect class='boxcompositor' x='0' y='8' width='"+width+"' height='"+height+"' rx='9'/>");
 		print("<circle cx='"+(width/2+12)+"' cy='14' r='2'/>");
 		print("<circle cx='"+(width/2+12)+"' cy='23' r='2'/>");
@@ -55,6 +56,8 @@ public class SymbolSequence extends AbstractSymbol {
 		if (cardinality!=null) {
 			print("<text x='5' y='52'>"+cardinality+"</text>");
 		}
+		*/
+		width-=60;
 		drawConnection();
 		drawUse();
 		drawGEnd();

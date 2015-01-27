@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @author Václav Slavìtínskı
+ * @author VÃ¡clav SlavÄ›tÃ­nskÃ½
  *
  */
 public class WriterHelper {

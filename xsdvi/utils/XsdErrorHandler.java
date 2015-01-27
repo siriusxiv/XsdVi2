@@ -6,7 +6,7 @@ import org.w3c.dom.DOMError;
 import org.w3c.dom.DOMErrorHandler;
 
 /**
- * @author Václav Slavìtínský
+ * @author VÃ¡clav SlavÄ›tÃ­nskÃ½
  *
  */
 public class XsdErrorHandler implements DOMErrorHandler {
