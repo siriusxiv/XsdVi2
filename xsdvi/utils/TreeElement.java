@@ -8,8 +8,8 @@ import java.util.List;
  *
  */
 public class TreeElement {
-	private TreeElement parent;
-	private List<TreeElement> children;
+	protected TreeElement parent;
+	protected List<TreeElement> children;
 	
 	/**
 	 * 

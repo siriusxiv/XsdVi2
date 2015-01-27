@@ -164,9 +164,11 @@ public abstract class AbstractSymbol extends TreeElement {
 	 * 
 	 */
 	protected void drawUse() {
-		if (hasChildren()) {
+		if (hasChildren() && (this.children.size() > 1 || !hasParent())) {
 			String code = code();
 			print("<use x='"+(width-1)+"' y='"+(MAX_HEIGHT/2-6)+"' xlink:href='#minus' id='s"+code+"' onclick='show(\""+code+"\")'/>");
+		}else{
+			this.width -= 10;
 		}
 	}
 
